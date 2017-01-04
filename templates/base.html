@@ -1,0 +1,49 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  {% block styling %}
+  <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+  {% endblock styling %}
+
+  </head>
+  <body>
+
+      <div class="container">
+        <div class="header clearfix">
+          <nav>
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation" class="active"><a href="{% url 'boardgames_home' %}">Home</a></li>
+              <li role="presentation"><a href="{% url 'tictactoe_invite' %}">New_game</a></li>
+              {% if user.is_authenticated %}
+                <li><a href="{% url 'user_home' %}">Profile</a></li>
+                <li><a href="{% url 'boardgames_logout' %}">Logout</a></li>
+              {% else %}
+              <li><a href="{% url 'boardgames_login' %}">Login</a></li>
+              {% endif %}
+            </ul>
+          </nav>
+          <h3 class="text-muted">Django Tictactoe App</h3>
+        </div>
+
+
+            {% block content %}
+            {% endblock content %}
+
+
+
+
+
+        <footer class="footer">
+          <hr>
+          <p>&copy; 2016 Company, Inc.</p>
+        </footer>
+
+      </div> <!-- /container -->
+
+
+  </body>
+</html>
