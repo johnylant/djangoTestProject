@@ -29,6 +29,9 @@
           <h3 class="text-muted">Django Tictactoe App</h3>
         </div>
 
+        {% block title %}
+        <p>Uvodna stranocka</p>
+        {% endblock title %}
 
             {% block content %}
             {% endblock content %}
@@ -43,6 +46,11 @@
         </footer>
 
       </div> <!-- /container -->
+      {% block javascript %}
+      <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+      <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+      {% endblock javascript %}
 
 
   </body>
