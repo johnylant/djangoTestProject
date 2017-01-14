@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
 
+{% block title %}
+All games listed
+{% endblock title %}
+
 {% block content %}
+<div class="row">
   <div class="well col-sm-6">
     {% include "tictactoe/game_list_snippet.html" with header="All games" games_list=object_list %}
   </div>
-
+</div>
 {% endblock content %}

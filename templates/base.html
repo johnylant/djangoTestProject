@@ -19,20 +19,23 @@
               <li role="presentation" class="active"><a href="{% url 'boardgames_home' %}">Home</a></li>
               <li role="presentation"><a href="{% url 'tictactoe_invite' %}">New_game</a></li>
               {% if user.is_authenticated %}
-                <li><a href="{% url 'user_home' %}">Profile</a></li>
-                <li><a href="{% url 'boardgames_logout' %}">Logout</a></li>
+                <li role="presentation"><a href="{% url 'user_home' %}">Profile</a></li>
+                <li role="presentation"><a href="{% url 'boardgames_logout' %}">Logout</a></li>
               {% else %}
-              <li><a href="{% url 'boardgames_login' %}">Login</a></li>
+              <li role="presentation"><a href="{% url 'boardgames_login' %}">Login</a></li>
               {% endif %}
             </ul>
           </nav>
           <h3 class="text-muted">Django Tictactoe App</h3>
         </div>
 
+        <br>
+        <h1>
         {% block title %}
-        <p>Uvodna stranocka</p>
+        <p>Main introduction page
         {% endblock title %}
-
+        </h1>
+        <br>
             {% block content %}
             {% endblock content %}
 
@@ -42,7 +45,7 @@
 
         <footer class="footer">
           <hr>
-          <p>&copy; 2016 Company, Inc.</p>
+          <p>&copy; 2017 HraskoApps, Inc.</p>
         </footer>
 
       </div> <!-- /container -->

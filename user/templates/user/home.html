@@ -1,15 +1,12 @@
 {% extends "base.html" %}
 
 {% block title %}
-Overview for {{user.username}}
+{{user.username}}'s profile
 {% endblock title %}
 
 
 {% block content %}
 
-
-  <h1>Toto Home v User app </h1>
-  <p> aby si vedel </p>
     <div class="row">
         <div class="well col-md-6">
           {% include "tictactoe/game_list_snippet.html" with header="Games waiting" games_list=waiting_games %}
@@ -28,6 +25,8 @@ Overview for {{user.username}}
                 </a>
               {% endfor %}
             </div>
+          {% else %}
+            <h3 class="panel-header">No new invitations received</h3>
           {% endif %}
         </div>
       </div>

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-Accept Invitation from {{ invitation.from_user.username }}
+You've received Invitation from {{ invitation.from_user.username }}
 
 {% endblock title %}
 
@@ -9,7 +9,6 @@ Accept Invitation from {{ invitation.from_user.username }}
 {% block content %}
 
 
-  <h1>Invitation page</h1>
     <div class="row">
         <div class="well col-md-6">
           <p> User {{ invitation.from_user }} invites you to a game. </p>
@@ -26,5 +25,5 @@ Accept Invitation from {{ invitation.from_user.username }}
           </form>
         </div>
     </div>
-    
+
 {% endblock content %}

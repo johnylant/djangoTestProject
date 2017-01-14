@@ -3,7 +3,7 @@
 {% load staticfiles %}
 
 {% block title %}
-TicTacToe Game: {{ game.first_player }} vs. {{ game.second_player }}
+TicTacToe Game: {{ game }}
 {% endblock title %}
 
 {% block styling %}
@@ -24,9 +24,7 @@ TicTacToe Game: {{ game.first_player }} vs. {{ game.second_player }}
 
 {% block content %}
 
-
-  <h3>Game: {{game}}</h3>
-
+    <div class="row">
         <div class="col-sm-9">
           <table class="table table-bordered" style="width: 60px; border-width: 2px">
             {% for line in game.as_board %}
@@ -56,5 +54,6 @@ TicTacToe Game: {{ game.first_player }} vs. {{ game.second_player }}
           {% block moveform %} {% endblock moveform %}
 
         </div>
+    </div>
 
 {% endblock content %}

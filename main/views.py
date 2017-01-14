@@ -8,4 +8,4 @@ def home(request):
 '''
 
 def home(request):
-    return render(request, "main/home.html", {'message':"Dobry den veduci!"})
+    return render(request, "main/home.html", {'message':"Hello, come and play with us some ticktacktoe!"})
