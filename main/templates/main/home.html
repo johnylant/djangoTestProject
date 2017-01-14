@@ -9,7 +9,7 @@
 {% else %}
   <h1> {{message}} </h1>
 <p class="lead">Test Django appka</p>
-<p><a class="btn btn-lg btn-success" href="#" role="button">Register</a></p>
+<p><a class="btn btn-lg btn-success" href={% url 'user_signup' %} role="button">Sign Up</a></p>
 {% endif %}
 
 </div>

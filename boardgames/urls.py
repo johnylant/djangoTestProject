@@ -17,6 +17,8 @@ from django.contrib.auth.views import login, logout
 from django.conf.urls import url, include
 from django.contrib import admin
 from main.views import home
+from django.conf import settings
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,5 +30,10 @@ urlpatterns = [
     url(r'^login/$', login, {'template_name': 'login.html'}, name='boardgames_login'),
     url(r'^logout/$', logout, {'next_page': 'boardgames_home'}, name='boardgames_logout')
 
+]
 
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [
+        url(r'^debug/', include(debug_toolbar.urls))
 ]
