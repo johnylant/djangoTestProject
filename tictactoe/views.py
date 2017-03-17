@@ -7,7 +7,7 @@ from django.views.generic import  ListView
 from .models import Invitation, Game, Move
 from .forms import InvitationForm, MoveForm
 
-# I dont need this for my APP, it is just to show what it can do!
+# I dont need this for my APP, it is just for ilustration purposes
 class AllGamesList(ListView):
     model = Game
 

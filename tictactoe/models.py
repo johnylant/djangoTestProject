@@ -16,7 +16,7 @@ SECOND_PLAYER_MOVE = 'O'
 BOARD_SIZE = 3
 
 # inherits from models.Manager
-# I REALLY DONT GET THIS!
+# a bit weird syntax - need to look into this
 class GamesManager(models.Manager):
     def games_for_user(self, user):
         return super(GamesManager, self).get_queryset().filter(

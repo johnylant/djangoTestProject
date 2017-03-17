@@ -4,8 +4,8 @@ from django.http import HttpResponse
 
 '''
 def home(request):
-    return HttpResponse("Hello gadzik!")
+    return HttpResponse("Hello man!")
 '''
 
 def home(request):
-    return render(request, "main/home.html", {'message':"Hello, come and play with us some ticktacktoe!"})
+    return render(request, "main/home.html", {'message':"Hello, come and play some ticktacktoe!"})
