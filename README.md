@@ -3,7 +3,7 @@
 ### Description
 Django project with user authentication made for simple tic-tac-toe online game. New user can register and invite any of the avallable users for a tic-tac-toe match. Results of all the past matches will be visible in your profile.
 
-This project was made for educational django example purposes based on pluralsight course insctructions:
+This project was made for educational django-example purposes, and it was based on pluralsight course available here:
 https://www.pluralsight.com/courses/django-fundamentals
 
 ### Quickstart
