@@ -1,4 +1,4 @@
-Django==2.1.5
+Django==1.10.4
 django-crispy-forms==1.6.1
 django-debug-toolbar==1.6
 sqlparse==0.2.2
