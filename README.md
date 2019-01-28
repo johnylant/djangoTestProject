@@ -25,4 +25,4 @@ python manage.py runserver
 
 Python 3.5+
 
-Some of the requirements may be outdated and old versions.
+Some of the requirements may be outdated and old versioned.
