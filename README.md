@@ -1,14 +1,21 @@
 ## Django TicTacToe APP
 
-Python 3.5
 
+### Quickstart
+
+```
 requirements in requirements.txt
-
+```
+```
 python manage.py makemigrations
-
+```
+```
 python manage.py migrate
-
+```
+```
 python manage.py runserver
+```
 
+Python 3.5+
 
---- Docstrings to be added in the code
+Some of the requirements may be outdated and old versions.
