@@ -21,7 +21,16 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-### Overview
+### Preview
+
+#### Main Page
+![Screenshot](images/main_page.png)
+#### Your Profile
+![Screenshot](images/profile.png)
+#### Actual Game
+![Screenshot](images/game.png)
+
+
 
 Python 3.5+
 
