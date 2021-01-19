@@ -1,4 +1,4 @@
-## Django TicTacToe APP
+## Django TicTacToe web application
 
 ### Description
 Django project with user authentication made for simple tic-tac-toe online game. New user can register and invite any of the avallable users for a tic-tac-toe match. Results of all the past matches will be visible in your profile.
